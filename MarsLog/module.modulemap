@@ -1,0 +1,4 @@
+module CMarsLog {
+    umbrella header "MarsLog.h"
+    export *
+}

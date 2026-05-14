@@ -57,5 +57,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// 查找符合服务器下发日期日志路徑
 - (NSMutableArray *)searchXLogFilesWithStart:(NSTimeInterval)logStartTime endTime:(NSTimeInterval)logEndTime;
 
-NS_ASSUME_NONNULL_END
 @end
+
+NS_ASSUME_NONNULL_END

@@ -13,6 +13,11 @@ let package = Package(
     targets: [
         .target(
             name: "MarsLog",
+            dependencies: ["CMarsLog"],
+            path: "Sources/MarsLog"
+        ),
+        .target(
+            name: "CMarsLog",
             dependencies: ["mars"],
             path: "MarsLog",
             publicHeadersPath: ".",
