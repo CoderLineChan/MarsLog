@@ -18,11 +18,11 @@ let package = Package(
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath("../mars.xcframework/ios-arm64/mars.framework/Headers"),
-                .headerSearchPath("../mars.xcframework/ios-x86_64-simulator/mars.framework/Headers")
+                .headerSearchPath("../mars.xcframework/ios-arm64-simulator/mars.framework/Headers")
             ],
             cxxSettings: [
                 .headerSearchPath("../mars.xcframework/ios-arm64/mars.framework/Headers"),
-                .headerSearchPath("../mars.xcframework/ios-x86_64-simulator/mars.framework/Headers")
+                .headerSearchPath("../mars.xcframework/ios-arm64-simulator/mars.framework/Headers")
             ],
             linkerSettings: [
                 .linkedLibrary("c++"),

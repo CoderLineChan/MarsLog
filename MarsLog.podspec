@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
     'DEFINES_MODULE' => 'YES',
     'HEADER_SEARCH_PATHS' => '$(inherited) ' +
     '"${PODS_ROOT}/MarsLog/mars.xcframework/ios-arm64/mars.framework/Headers" ' +
-    '"${PODS_ROOT}/MarsLog/mars.xcframework/ios-x86_64-simulator/mars.framework/Headers"'
+    '"${PODS_ROOT}/MarsLog/mars.xcframework/ios-arm64-simulator/mars.framework/Headers"'
   }
 
 end
