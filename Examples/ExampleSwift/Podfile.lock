@@ -1,0 +1,16 @@
+PODS:
+  - MarsLog (1.0.0)
+
+DEPENDENCIES:
+  - MarsLog (from `../../`)
+
+EXTERNAL SOURCES:
+  MarsLog:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  MarsLog: 0dedf6b64ee82a86556cf9f65fafd2c2ca0806a3
+
+PODFILE CHECKSUM: 854d7894839924983d03b390a81177b435d87ffb
+
+COCOAPODS: 1.16.2
