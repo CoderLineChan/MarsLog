@@ -1,7 +1,7 @@
 
 #import "MarsLogger.h"
-#import <mars/xlog/appender.h>
-#import <mars/xlog/xloggerbase.h>
+#import <xlog/appender.h>
+#import <xlog/xloggerbase.h>
 
 
 static NSUInteger g_processID = 0;

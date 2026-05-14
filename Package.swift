@@ -10,34 +10,24 @@ let package = Package(
             name: "MarsLog",
             targets: ["MarsLog"]),
     ],
-    dependencies: [],
     targets: [
         .target(
             name: "MarsLog",
-            dependencies: [],
-            path: ".",
-            sources: ["MarsLog"],
-            publicHeadersPath: "MarsLog",
+            dependencies: ["mars"],
+            path: "MarsLog",
+            publicHeadersPath: ".",
             cSettings: [
-                .headerSearchPath("MarsLog"),
-                .headerSearchPath("mars.xcframework/ios-arm64/mars.framework/Headers"),
-                .headerSearchPath("mars.xcframework/ios_x86_64-simulator/mars.framework/Headers")
+                .headerSearchPath("../mars.xcframework/ios-arm64/mars.framework/Headers"),
+                .headerSearchPath("../mars.xcframework/ios-x86_64-simulator/mars.framework/Headers")
             ],
             cxxSettings: [
-                .headerSearchPath("MarsLog"),
-                .headerSearchPath("mars.xcframework/ios-arm64/mars.framework/Headers"),
-                .headerSearchPath("mars.xcframework/ios_x86_64-simulator/mars.framework/Headers"),
-                .unsafeFlags(["-std=c++11"])  // 对应 C++11 配置
+                .headerSearchPath("../mars.xcframework/ios-arm64/mars.framework/Headers"),
+                .headerSearchPath("../mars.xcframework/ios-x86_64-simulator/mars.framework/Headers")
             ],
             linkerSettings: [
                 .linkedLibrary("c++"),
                 .linkedLibrary("z"),
-                .linkedFramework("Foundation"),
-                .unsafeFlags([
-                    "-L./mars.xcframework/ios-arm64/mars.framework",
-                    "-L./mars.xcframework/ios_x86_64-simulator/mars.framework",
-                    "-lmars"
-                ])
+                .linkedFramework("Foundation")
             ]
         ),
         .binaryTarget(
@@ -45,5 +35,5 @@ let package = Package(
             path: "mars.xcframework"
         )
     ],
-    cxxLanguageStandard: .cxx11  // 全局 C++11 标准
+    cxxLanguageStandard: .cxx11
 )
