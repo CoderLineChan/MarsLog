@@ -2,23 +2,25 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>CFBundleExecutable</key>
-    <string>mars</string>
-    <key>CFBundleIdentifier</key>
-    <string>com.tencent.mars.mars</string>
-    <key>CFBundleName</key>
-    <string>mars</string>
-    <key>CFBundlePackageType</key>
-    <string>FMWK</string>
-    <key>CFBundleShortVersionString</key>
-    <string>1.0</string>
-    <key>CFBundleVersion</key>
-    <string>1</string>
-    <key>CFBundleSupportedPlatforms</key>
-    <array>
-        <string>iPhoneOS</string>
-    </array>
-    <key>DTPlatformName</key>
-    <string>iphoneos</string>
+	<key>CFBundleExecutable</key>
+	<string>mars</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.tencent.mars.mars</string>
+	<key>CFBundleName</key>
+	<string>mars</string>
+	<key>CFBundlePackageType</key>
+	<string>FMWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>iPhoneOS</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>DTPlatformName</key>
+	<string>iphoneos</string>
+	<key>MinimumOSVersion</key>
+	<string>8.0</string>
 </dict>
 </plist>
