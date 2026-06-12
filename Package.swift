@@ -23,12 +23,12 @@ let package = Package(
             path: "MarsLog",
             publicHeadersPath: ".",
             cSettings: [
-                .headerSearchPath("../mars-static.xcframework/ios-arm64/Headers"),
-                .headerSearchPath("../mars-static.xcframework/ios-arm64_x86_64-simulator/Headers")
+                .headerSearchPath("../mars.xcframework/ios-arm64/Headers"),
+                .headerSearchPath("../mars.xcframework/ios-arm64_x86_64-simulator/Headers")
             ],
             cxxSettings: [
-                .headerSearchPath("../mars-static.xcframework/ios-arm64/Headers"),
-                .headerSearchPath("../mars-static.xcframework/ios-arm64_x86_64-simulator/Headers")
+                .headerSearchPath("../mars.xcframework/ios-arm64/Headers"),
+                .headerSearchPath("../mars.xcframework/ios-arm64_x86_64-simulator/Headers")
             ],
             linkerSettings: [
                 .linkedLibrary("c++"),
@@ -38,7 +38,7 @@ let package = Package(
         ),
         .binaryTarget(
             name: "mars",
-            path: "mars-static.xcframework"
+            path: "mars.xcframework"
         )
     ],
     cxxLanguageStandard: .cxx11
