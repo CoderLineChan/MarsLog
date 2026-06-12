@@ -8,6 +8,7 @@ let package = Package(
     products: [
         .library(
             name: "MarsLog",
+            type: .static,
             targets: ["MarsLog"]),
     ],
     targets: [
