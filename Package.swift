@@ -4,7 +4,10 @@ import PackageDescription
 
 let package = Package(
     name: "MarsLog",
-    platforms: [.iOS("15.0")],
+    platforms: [
+        .iOS("15.0"),
+        .macOS("11.0")
+    ],
     products: [
         .library(
             name: "MarsLog",
@@ -24,11 +27,13 @@ let package = Package(
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath("../mars.xcframework/ios-arm64/Headers"),
-                .headerSearchPath("../mars.xcframework/ios-arm64_x86_64-simulator/Headers")
+                .headerSearchPath("../mars.xcframework/ios-arm64_x86_64-simulator/Headers"),
+                .headerSearchPath("../mars.xcframework/macos-arm64/Headers")
             ],
             cxxSettings: [
                 .headerSearchPath("../mars.xcframework/ios-arm64/Headers"),
-                .headerSearchPath("../mars.xcframework/ios-arm64_x86_64-simulator/Headers")
+                .headerSearchPath("../mars.xcframework/ios-arm64_x86_64-simulator/Headers"),
+                .headerSearchPath("../mars.xcframework/macos-arm64/Headers")
             ],
             linkerSettings: [
                 .linkedLibrary("c++"),
