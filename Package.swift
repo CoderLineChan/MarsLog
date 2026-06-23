@@ -28,12 +28,12 @@ let package = Package(
             cSettings: [
                 .headerSearchPath("../mars.xcframework/ios-arm64/Headers"),
                 .headerSearchPath("../mars.xcframework/ios-arm64_x86_64-simulator/Headers"),
-                .headerSearchPath("../mars.xcframework/macos-arm64/Headers")
+                .headerSearchPath("../mars.xcframework/macos-arm64_x86_64/Headers")
             ],
             cxxSettings: [
                 .headerSearchPath("../mars.xcframework/ios-arm64/Headers"),
                 .headerSearchPath("../mars.xcframework/ios-arm64_x86_64-simulator/Headers"),
-                .headerSearchPath("../mars.xcframework/macos-arm64/Headers")
+                .headerSearchPath("../mars.xcframework/macos-arm64_x86_64/Headers")
             ],
             linkerSettings: [
                 .linkedLibrary("c++"),

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MarsLog'
-  s.version          = '1.0.6-beta.1'
+  s.version          = '1.0.6-beta.2'
   s.summary          = 'Swift-style declarative UIKit Plus'
   s.homepage         = 'https://github.com/CoderLineChan/MarsLog'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
     'HEADER_SEARCH_PATHS' => '$(inherited) ' +
     '"${PODS_ROOT}/MarsLog/mars.xcframework/ios-arm64/Headers" ' +
     '"${PODS_ROOT}/MarsLog/mars.xcframework/ios-arm64_x86_64-simulator/Headers" ' +
-    '"${PODS_ROOT}/MarsLog/mars.xcframework/macos-arm64/Headers"'
+    '"${PODS_ROOT}/MarsLog/mars.xcframework/macos-arm64_x86_64/Headers"'
   }
 
 end
