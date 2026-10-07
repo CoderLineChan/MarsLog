@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MarsLog'
-  s.version          = '1.0.6-beta.2'
+  s.version          = '1.0.6-beta.3'
   s.summary          = 'Swift-style declarative UIKit Plus'
   s.homepage         = 'https://github.com/CoderLineChan/MarsLog'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -9,6 +9,7 @@ Pod::Spec.new do |s|
   
   s.ios.deployment_target = '15.0'
   s.osx.deployment_target = '11.0'
+  s.watchos.deployment_target = '9.0'
   s.requires_arc = true
 
   s.source_files = 'MarsLog/**/*.{h,m,mm}'

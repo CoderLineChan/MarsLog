@@ -6,7 +6,8 @@ let package = Package(
     name: "MarsLog",
     platforms: [
         .iOS("15.0"),
-        .macOS("11.0")
+        .macOS("11.0"),
+        .watchOS("9.0")
     ],
     products: [
         .library(
